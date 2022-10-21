@@ -10,6 +10,15 @@
       src="https://kit.fontawesome.com/35e3b9040c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("EaUyP4WqkS9cfUoZk");
+   })();
+</script>
   </head>
   <body>
     <section id="landing-page">
@@ -18,7 +27,7 @@
           <img id="personal-logo" src="./assets/AF Slash.svg" alt="" />
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -43,7 +52,7 @@
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fa-solid fa-sun"></i
+              ><i class="fa-solid fa-sun" onclick="toggleContrast()"></i
             ></a>
           </li>
         </ul>
@@ -55,7 +64,7 @@
           <p class="header__para">
             I'm a <b class="blue">Frontend Software Engineer</b> with a strong
             passion for building web applications with great user experiences.
-            <br />Here's a bit more <b class="blue">about me.</b>
+            <br />Here's a bit more <b class="blue click" onclick="toggleModal()">about me.</b>
           </p>
           <div class="social__list">
             <a
@@ -82,7 +91,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-paper-plane"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -141,9 +150,10 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i> 
           <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
           <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunties</h4>
-          <form action="" id="contact_form">
+          <form id="contact_form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">Name</label>
               <input class="input" type="text" name="user_name" required id=""></input>
@@ -163,7 +173,6 @@
           </div>
           <div class="modal__overlay modal__overlay--success">Thanks for the message! Looking forward to speaking with you soon.</div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
       </div>
     </section>
     <section id="projects">
@@ -285,22 +294,23 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href="#"
+              href="https://github.com/ArshFarwaha"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >GitHub</a
             >
             <a
-              href="#"
+              href="https://www.linkedin.com/in/arshdeep-farwaha-798b03109/"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >LinkedIn</a
             >
             <a
               href="#"
               class="footer__social--link link__hover-effect link__hover-effect--white"
+              onclick="toggleModal()"
               >Contact</a
             >
             <a
-              href="#"
+              href="./assets/David Bragg Resume.pdf"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >Resume</a
             >
