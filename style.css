@@ -700,6 +700,10 @@ SHAPES
   .modal__half {
     width: 100%;    
   }
+
+  .section__title {
+    font-size: 32px;
+  }
 }
 
 /* Small phones */
