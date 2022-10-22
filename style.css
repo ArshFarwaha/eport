@@ -507,6 +507,7 @@ PROJECTS
   text-align: center;
   font-size: 48px;
   margin-bottom: 60px;
+  overflow-x: hidden;;
 }
 
 .project__img {
