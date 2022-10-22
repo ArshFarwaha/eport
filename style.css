@@ -680,6 +680,10 @@ SHAPES
 /* Small phones, tablets, large smartphones */
 
 @media (max-width: 768px) {
+  html {
+    overflow: none;
+  }
+
   .title {
     font-size: 80px;
   }
