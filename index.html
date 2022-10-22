@@ -21,7 +21,7 @@
 </script>
   </head>
   <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img id="personal-logo" src="./assets/AF Slash.svg" alt="" />
@@ -36,12 +36,12 @@
           </li>
           <li class="nav__link">
             <a
-              href="#"
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -91,9 +91,11 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fa-solid fa-paper-plane"></i>
-      </button>
+      <a href="#">        
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </a>
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
@@ -102,7 +104,6 @@
           <h3 class="modal__title modal__title--about">
             Here's a bit about me!
           </h3>
-
           <h4 class="modal__sub-title modal__sub-title--about">
             <b>Frontend Software Engineer</b>
           </h4>
@@ -174,6 +175,15 @@
           <div class="modal__overlay modal__overlay--success">Thanks for the message! Looking forward to speaking with you soon.</div>
         </div>
       </div>
+      <img src="./assets/rocket bg.png" class="shape shape--0" alt="">
+      <img src="./assets/moon bg.png" class="shape shape--1" alt="">
+      <img src="./assets/star bg.png" class="shape shape--2" alt="">
+      <img src="./assets/sun bg.png" class="shape shape--3" alt="">
+      <img src="./assets/rocket bg.png" class="shape shape--4" alt="">
+      <img src="./assets/moon bg.png" class="shape shape--5" alt="">
+      <img src="./assets/moon bg.png" class="shape shape--6" alt="">
+      <img src="./assets/sun bg.png" class="shape shape--7" alt="">
+      <img src="./assets/rocket bg.png" class="shape shape--8" alt="">
     </section>
     <section id="projects">
       <div class="container">
@@ -294,25 +304,28 @@
           </figure>
           <div class="footer__social--list">
             <a
+              href="https://www.linkedin.com/in/arshdeep-farwaha-798b03109/"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >LinkedIn</a
+            >
+            <a
               href="https://github.com/ArshFarwaha"
+              target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >GitHub</a
             >
             <a
-              href="https://www.linkedin.com/in/arshdeep-farwaha-798b03109/"
+            href="./assets/David Bragg Resume.pdf"
+              target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
-              >LinkedIn</a
+              >Resume</a
             >
             <a
               href="#"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               onclick="toggleModal()"
               >Contact</a
-            >
-            <a
-              href="./assets/David Bragg Resume.pdf"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-              >Resume</a
             >
           </div>
           <div class="footer__copyright">Copyright © 2022 Arshdeep Farwaha</div>
