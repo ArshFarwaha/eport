@@ -7,6 +7,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -680,11 +688,7 @@ SHAPES
 /* Small phones, tablets, large smartphones */
 
 @media (max-width: 768px) {
-  html {
-    overflow: none;
-  }
-
-  .title {
+   .title {
     font-size: 80px;
   }
 
