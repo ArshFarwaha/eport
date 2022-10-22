@@ -507,7 +507,7 @@ PROJECTS
   text-align: center;
   font-size: 48px;
   margin-bottom: 60px;
-  overflow-x: hidden;;
+  overflow-x: hidden;
 }
 
 .project__img {
@@ -625,63 +625,62 @@ SHAPES
 
 .shape--0 {
   top: 15vh;
-  width: 2vw;
+  width: 1.25vw;
   left: 5vw;
 }
 
 .shape--1 {
   top: 15vh;
-  width: 2vw;
+  width: 1.25vw;
   left: 50vw;
 }
 
 .shape--2 {
   top: 15vh;
-  width: 2vw;
+  width: 1.25vw;
   left: 80vw;
 }
 
 .shape--3 {
   top: 50vh;
-  width: 2vw;
+  width: 1.25vw;
   left: 5vw;
 }
 
 .shape--4 {
   top: 50vh;
-  width: 2vw;
+  width: 1.25vw;
   left: 50vw;
 }
 
 .shape--5 {
   top: 50vh;
-  width: 2vw;
+  width: 1.25vw;
   left: 80vw;
 }
 
 .shape--6 {
   top: 80vh;
-  width: 2vw;
+  width: 1.25vw;
   left: 5vw;
 }
 
 .shape--7 {
   top: 80vh;
-  width: 2vw;
+  width: 1.25vw;
   left: 50vw;
 }
 
 .shape--8 {
   top: 80vh;
-  width: 2vw;
+  width: 1.25vw;
   left: 80vw;
 }
 
-
- /* Small phones, tablets, large smartphones */
+/* Small phones, tablets, large smartphones */
 
 @media (max-width: 768px) {
-   .title {
+  .title {
     font-size: 80px;
   }
 
@@ -699,7 +698,7 @@ SHAPES
   }
 
   .modal__half {
-    width: 100%;    
+    width: 100%;
   }
 
   .section__title {
