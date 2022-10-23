@@ -704,6 +704,10 @@ SHAPES
   .section__title {
     font-size: 32px;
   }
+
+  .shape {
+    width: 15px;
+  }
 }
 
 /* Small phones */
