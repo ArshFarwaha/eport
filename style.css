@@ -680,10 +680,6 @@ SHAPES
 /* Small phones, tablets, large smartphones */
 
 @media (max-width: 768px) {
-  #landing-page {
-    min-height: 90vh;
-  }
-
   .title {
     font-size: 80px;
   }
