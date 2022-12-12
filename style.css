@@ -572,6 +572,13 @@ PROJECTS
   margin-right: 16px;
 }
 
+.fa-brands,
+.fa-github,
+.fas,
+.fa-link {
+  color: white;
+}
+
 .project__description--para {
   margin: 16px 0;
 }
