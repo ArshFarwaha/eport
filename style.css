@@ -29,7 +29,7 @@ button {
 }
 
 section {
-  background-color: #dfdfdf;
+  background-color: #f2f3f4;
   transition: all 300ms ease;
 }
 
@@ -358,7 +358,7 @@ MODAL
 }
 
 .modal__about {
-  background-color: #dfdfdf;
+  background-color: #f2f3f4;
   transform: translateX(-110%);
 }
 
@@ -422,8 +422,8 @@ MODAL
 }
 
 .form__submit {
-  background-color: #dfdfdf;
-  border: 2px solid #dfdfdf;
+  background-color: #f2f3f4;
+  border: 2px solid #f2f3f4;
   color: black;
   font-weight: bold;
   width: 100%;
